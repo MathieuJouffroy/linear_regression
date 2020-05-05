@@ -1,4 +1,18 @@
 # linear_regression
->Simple linear regression with a single feature - the mileage of the car.<>br
+>Simple linear regression with a single feature - the mileage of the car.<br>
 >Create a program that predicts the price of a car by using a linear function train with a gradient descent algorithm.
+<br>
+
+## Maths
+Hypothesis:<br>
+<img src="./images/hypothesis.png"/>
+Params:
+<img src="./images/params.png"/>
+Cost function:<br>
+<img src="./images/cost_fct.png"/>
+Gradien Descent:<br>
+<img src="./images/grad_desc.png"/>
+Derivative term:<br>
+<img src="./images/derivative.png"/>
+
 
