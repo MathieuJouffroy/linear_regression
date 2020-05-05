@@ -3,7 +3,7 @@
 >Create a program that predicts the price of a car by using a linear function train with a gradient descent algorithm.
 <br>
 
-## Maths
+## 
 Hypothesis:<br>
 <img src="./images/hypothesis.png"/><br>
 Params:<br>
