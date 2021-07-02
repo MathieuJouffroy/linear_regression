@@ -11,13 +11,13 @@ def main():
     parser.add_argument('--feature_scaling', default='normalization', choices={"normalization", "standardization"}, help='feature scaling method')
     parser.add_argument('--method', default='vectorization', choices={"vectorization", "for_loop"},  help='method for computing Gradient Descent')
     parser.add_argument('--n_iters', default=300, type=int, help='number of iterations for the Gradient Descent')
-    parser.add_argument('--alpha', default=0.5, type=float, help='learning Rate for your model')
+    parser.add_argument('--alpha', default=0.5, type=float, help='learning Rate for your model (must be a float)')
     parser.add_argument('-a', action="store_true", help='accuracy and metrics')
     parser.add_argument('-v', action="store_true", help='visualize the model and cost function')
     args = parser.parse_args()
 
     # Load data and initialize the model
-    mileage, price = get_data('./data.csv')
+    mileage, price = get_data(args.dataset)
     model = LinearRegression(args.alpha, args.n_iters)
     model.set_weigths()
 

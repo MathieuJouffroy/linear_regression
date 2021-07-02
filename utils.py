@@ -19,7 +19,7 @@ def get_data(dataset):
 
     mileage = []
     price = []
-    if (os.path.isfile(dataset)):
+    try:
         with open(dataset, 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter=',')
             for row in reader:
@@ -30,6 +30,9 @@ def get_data(dataset):
         for i in range(len(mileage)):
             mileage[i] = eval(mileage[i])
             price[i] = eval(price[i])
+    except Exception as e:
+        print ("Cant open the file passed as argument")
+        raise e
     return mileage, price
 
 def	get_thetas_and_fs_method(model):
