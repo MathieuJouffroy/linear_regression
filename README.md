@@ -1,6 +1,6 @@
 # linear_regression
->Simple linear regression with a single feature - the mileage of the car.<br>
->Create a program that predicts the price of a car by using a linear function train with a gradient descent algorithm.
+>Recoding from scratich a simple linear regression model with a single feature - the mileage of the car.<br>
+>After training the model using gradient descent, the program predicts the price of a car given a mileage.
 ## 
 Hypothesis:<br>
 <img src="./images/hypothesis.png"/><br>
